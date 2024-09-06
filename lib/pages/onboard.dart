@@ -80,7 +80,7 @@ class _OnBoardPageState extends State<OnBoardPage> {
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15)),
                       color: Colors.lightBlue,
-                      child: Icon(
+                      child: const Icon(
                         Icons.arrow_forward_ios,
                         color: Colors.white,
                       ),
