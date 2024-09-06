@@ -17,6 +17,6 @@ List<OnBoards> onBoardData = [
   OnBoards(
       image:
           "https://img.freepik.com/free-vector/hand-drawn-flat-tourists-illustration_23-2149053947.jpg?ga=GA1.1.795971097.1724933458&semt=ais_hybrid",
-      text1: "Let\'s make",
+      text1: "Let's make",
       text2: "your dream vacation")
 ];
