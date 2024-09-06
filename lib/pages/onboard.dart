@@ -15,6 +15,10 @@ class _OnBoardPageState extends State<OnBoardPage> {
       duration: Duration(milliseconds: 400),
       margin: EdgeInsets.only(right: 10),
       width: index == currentIndex ? 40 : 10,
+      height: 10,
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(15),
+          color: index == currentIndex ? Colors.white : Colors.white54),
     );
   }
 
@@ -31,15 +35,13 @@ class _OnBoardPageState extends State<OnBoardPage> {
                   fit: BoxFit.cover,
                 );
               }),
-          const Padding(
+          Padding(
             padding: EdgeInsets.symmetric(horizontal: 30, vertical: 60),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
-                  children: [
-                    List.generate(onBoardData.length, (index) => null)
-                  ],
+                  children: List.generate(onBoardData.length, dotIndicator),
                 )
               ],
             ),
