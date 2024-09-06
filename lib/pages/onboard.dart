@@ -52,10 +52,10 @@ class _OnBoardPageState extends State<OnBoardPage> {
                 ),
                 Text.rich(TextSpan(
                     style: const TextStyle(
-                        fontSize: 45, height: 1.2, color: Colors.white),
+                        fontSize: 44, height: 1.2, color: Colors.white),
                     children: [
                       TextSpan(
-                          text: onBoardData[currentIndex].text1,
+                          text: "${onBoardData[currentIndex].text1}\n",
                           style: const TextStyle(fontWeight: FontWeight.w300)),
                       TextSpan(
                           text: onBoardData[currentIndex].text2,
