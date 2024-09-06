@@ -6,7 +6,17 @@ class OnBoards {
 List<OnBoards> onBoardData = [
   OnBoards(
       image:
-          "https://img.freepik.com/free-vector/website-designer-concept-illustration_114360-4449.jpg?size=626&ext=jpg&ga=GA1.1.795971097.1724933458&semt=ais_hybrid",
+          "https://img.freepik.com/free-vector/travel-people-character-with-suitcase-trip_107791-28091.jpg?ga=GA1.1.795971097.1724933458&semt=ais_hybrid",
+      text1: "Enjoy your",
+      text2: "trip in nature"),
+  OnBoards(
+      image:
+          "https://img.freepik.com/free-vector/travel-people-character-with-suitcase-trip_107791-28091.jpg?ga=GA1.1.795971097.1724933458&semt=ais_hybrid",
+      text1: "Enjoy your",
+      text2: "trip in nature"),
+  OnBoards(
+      image:
+          "https://img.freepik.com/free-vector/travel-people-character-with-suitcase-trip_107791-28091.jpg?ga=GA1.1.795971097.1724933458&semt=ais_hybrid",
       text1: "Enjoy your",
       text2: "trip in nature")
 ];
