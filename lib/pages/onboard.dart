@@ -45,6 +45,7 @@ class _OnBoardPageState extends State<OnBoardPage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
                   children: List.generate(onBoardData.length, dotIndicator),
                 ),
                 const SizedBox(
