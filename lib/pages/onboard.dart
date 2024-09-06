@@ -29,6 +29,9 @@ class _OnBoardPageState extends State<OnBoardPage> {
       body: Stack(
         children: [
           PageView.builder(
+              onPageChanged: (value) => setState(() {
+                    currentIndex = value;
+                  }),
               itemCount: onBoardData.length,
               itemBuilder: (context, index) {
                 return Image.network(
