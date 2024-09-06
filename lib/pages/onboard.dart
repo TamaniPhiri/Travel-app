@@ -78,8 +78,9 @@ class _OnBoardPageState extends State<OnBoardPage> {
                       padding: const EdgeInsets.all(15),
                       duration: const Duration(milliseconds: 400),
                       decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15)),
-                      color: Colors.lightBlue,
+                        borderRadius: BorderRadius.circular(15),
+                        color: Colors.lightBlue,
+                      ),
                       child: const Icon(
                         Icons.arrow_forward_ios,
                         color: Colors.white,
