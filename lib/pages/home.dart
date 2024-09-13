@@ -23,7 +23,17 @@ class _HomePageState extends State<HomePage> {
               SizedBox(
                 height: size.height * 0.03,
               ),
-              const MySearchBar()
+              const MySearchBar(),
+              const SizedBox(
+                height: 30,
+              ),
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [Text("Explore cities")],
+                ),
+              )
             ],
           ),
         ),
