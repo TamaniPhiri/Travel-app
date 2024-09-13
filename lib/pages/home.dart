@@ -74,7 +74,7 @@ class _HomePageState extends State<HomePage> {
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(10),
                                       color: category == categories[index]
-                                          ? Colors.blue[200]
+                                          ? Colors.blue[400]
                                           : Colors.white),
                                   padding: const EdgeInsets.symmetric(
                                       horizontal: 15, vertical: 10),
