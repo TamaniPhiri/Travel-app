@@ -7,34 +7,25 @@ class MyAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return const Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Expanded(
-            child: TextField(
-          decoration: InputDecoration(
-              focusedBorder: UnderlineInputBorder(
-                  borderSide: BorderSide(color: Colors.blue)),
-              hintText: "Search..",
-              prefixIcon: Icon(Icons.search),
-              contentPadding: EdgeInsets.all(20),
-              filled: true,
-              fillColor: Colors.white,
-              enabledBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.white),
-                  borderRadius: BorderRadius.circular(15))),
-        )),
-        const SizedBox(
-          width: 10,
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              "Hello Tamani 👋",
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700),
+            ),
+            Text("Explore Beautiful Places",
+                style:
+                    TextStyle(fontWeight: FontWeight.w600, color: Colors.grey))
+          ],
         ),
-        Container(
-          padding: EdgeInsets.all(10),
-          decoration: BoxDecoration(
-              color: Colors.blue, borderRadius: BorderRadius.circular(15)),
-          child: Icon(
-            Icons.tune,
-            size: 30,
-            color: Colors.white,
-          ),
+        CircleAvatar(
+          backgroundImage:
+              NetworkImage("https://avatar.iran.liara.run/public/7"),
         )
       ],
     );
