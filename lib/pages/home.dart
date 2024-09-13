@@ -57,6 +57,15 @@ class _HomePageState extends State<HomePage> {
                             borderSide: BorderSide(color: Colors.white),
                             borderRadius: BorderRadius.circular(15))),
                   )),
+                  const SizedBox(
+                    width: 10,
+                  ),
+                  Container(
+                    child: Icon(
+                      Icons.tune,
+                      size: 30,
+                    ),
+                  )
                 ],
               )
             ],
