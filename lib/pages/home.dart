@@ -66,7 +66,9 @@ class _HomePageState extends State<HomePage> {
                                   const EdgeInsets.only(left: 10, right: 10),
                               child: GestureDetector(
                                 onTap: () {
-                                  setState(() {});
+                                  setState(() {
+                                    category == categories[index];
+                                  });
                                 },
                                 child: Container(
                                   decoration: BoxDecoration(
@@ -76,7 +78,13 @@ class _HomePageState extends State<HomePage> {
                                           : Colors.white),
                                   padding: const EdgeInsets.symmetric(
                                       horizontal: 15, vertical: 10),
-                                  child: Text(categories[index]),
+                                  child: Text(
+                                    categories[index],
+                                    style: TextStyle(
+                                        color: category == categories[index]
+                                            ? Colors.white
+                                            : Colors.grey),
+                                  ),
                                 ),
                               ),
                             )),
