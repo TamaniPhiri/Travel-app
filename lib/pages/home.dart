@@ -18,6 +18,7 @@ class _HomePageState extends State<HomePage> {
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -31,6 +32,10 @@ class _HomePageState extends State<HomePage> {
                           style: TextStyle(
                               fontWeight: FontWeight.w600, color: Colors.grey))
                     ],
+                  ),
+                  CircleAvatar(
+                    backgroundImage:
+                        NetworkImage("https://avatar.iran.liara.run/public/7"),
                   )
                 ],
               )
