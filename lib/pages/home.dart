@@ -31,7 +31,13 @@ class _HomePageState extends State<HomePage> {
                 padding: EdgeInsets.symmetric(horizontal: 20),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [Text("Explore cities")],
+                  children: [
+                    Text(
+                      "Explore cities",
+                      style:
+                          TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                    )
+                  ],
                 ),
               )
             ],
