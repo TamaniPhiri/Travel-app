@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:travel_app/components/my_app_bar.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -43,38 +44,7 @@ class _HomePageState extends State<HomePage> {
               SizedBox(
                 height: size.height * 0.03,
               ),
-              Row(
-                children: [
-                  Expanded(
-                      child: TextField(
-                    decoration: InputDecoration(
-                        focusedBorder: UnderlineInputBorder(
-                            borderSide: BorderSide(color: Colors.blue)),
-                        hintText: "Search..",
-                        prefixIcon: Icon(Icons.search),
-                        contentPadding: EdgeInsets.all(20),
-                        filled: true,
-                        fillColor: Colors.white,
-                        enabledBorder: OutlineInputBorder(
-                            borderSide: BorderSide(color: Colors.white),
-                            borderRadius: BorderRadius.circular(15))),
-                  )),
-                  const SizedBox(
-                    width: 10,
-                  ),
-                  Container(
-                    padding: EdgeInsets.all(10),
-                    decoration: BoxDecoration(
-                        color: Colors.blue,
-                        borderRadius: BorderRadius.circular(15)),
-                    child: Icon(
-                      Icons.tune,
-                      size: 30,
-                      color: Colors.white,
-                    ),
-                  )
-                ],
-              )
+              const MyAppBar()
             ],
           ),
         ),
