@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:travel_app/components/my_app_bar.dart';
 import 'package:travel_app/components/search_bar.dart';
+import 'package:travel_app/models/categories.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -50,6 +51,30 @@ class _HomePageState extends State<HomePage> {
                         )
                       ],
                     )
+                  ],
+                ),
+              ),
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                    ...List.generate(
+                        categories.length,
+                        (index) => Padding(
+                              padding: EdgeInsets.only(left: 15, right: 10),
+                              child: GestureDetector(
+                                onTap: () {
+                                  setState(() {});
+                                },
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                      color: Colors.lightBlueAccent),
+                                  padding: EdgeInsets.symmetric(
+                                      horizontal: 15, vertical: 10),
+                                  child: Text(categories[index]),
+                                ),
+                              ),
+                            )),
                   ],
                 ),
               )
