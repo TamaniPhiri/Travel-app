@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:travel_app/components/explore_cities.dart';
 import 'package:travel_app/components/my_app_bar.dart';
 import 'package:travel_app/components/search_bar.dart';
 import 'package:travel_app/models/categories.dart';
@@ -29,32 +30,7 @@ class _HomePageState extends State<HomePage> {
               const SizedBox(
                 height: 30,
               ),
-              Padding(
-                padding: const EdgeInsets.symmetric(vertical: 20),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    const Text(
-                      "Explore cities",
-                      style:
-                          TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-                    ),
-                    Row(
-                      children: [
-                        Text(
-                          "All",
-                          style: TextStyle(color: Colors.blue[200]),
-                        ),
-                        const Icon(
-                          Icons.arrow_forward_ios_rounded,
-                          size: 14,
-                          color: Colors.blueAccent,
-                        )
-                      ],
-                    )
-                  ],
-                ),
-              ),
+              const ExploreCities(),
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
