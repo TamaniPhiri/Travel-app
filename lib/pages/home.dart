@@ -43,7 +43,11 @@ class _HomePageState extends State<HomePage> {
                           "All",
                           style: TextStyle(color: Colors.blueAccent),
                         ),
-                        Icon(Icons.arrow_forward)
+                        Icon(
+                          Icons.arrow_forward_ios_rounded,
+                          size: 14,
+                          color: Colors.blueAccent,
+                        )
                       ],
                     )
                   ],
