@@ -10,13 +10,14 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    Size size = MediaQuery.of(context).size;
+    return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: EdgeInsets.all(12.0),
+          padding: const EdgeInsets.all(12.0),
           child: Column(
             children: [
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
@@ -38,6 +39,9 @@ class _HomePageState extends State<HomePage> {
                         NetworkImage("https://avatar.iran.liara.run/public/7"),
                   )
                 ],
+              ),
+              SizedBox(
+                height: size.height * 0.03,
               )
             ],
           ),
