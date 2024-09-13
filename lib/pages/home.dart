@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:travel_app/components/my_app_bar.dart';
+import 'package:travel_app/components/search_bar.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -22,7 +23,7 @@ class _HomePageState extends State<HomePage> {
               SizedBox(
                 height: size.height * 0.03,
               ),
-              const SearchBar()
+              const MySearchBar()
             ],
           ),
         ),
