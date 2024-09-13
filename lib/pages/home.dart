@@ -21,7 +21,11 @@ class _HomePageState extends State<HomePage> {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Hello Tamani 👋"),
+                      Text(
+                        "Hello Tamani 👋",
+                        style: TextStyle(
+                            fontSize: 18, fontWeight: FontWeight.w700),
+                      ),
                       Text("Explore Beautiful Places")
                     ],
                   )
