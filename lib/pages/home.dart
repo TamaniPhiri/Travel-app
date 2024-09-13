@@ -20,7 +20,10 @@ class _HomePageState extends State<HomePage> {
                 children: [
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [Text("Hello"), Text("Explore Beautiful Places")],
+                    children: [
+                      Text("Hello Tamani 👋"),
+                      Text("Explore Beautiful Places")
+                    ],
                   )
                 ],
               )
