@@ -12,16 +12,20 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: SafeArea(
-        child: Column(
-          children: [
-            Row(
-              children: [
-                Column(
-                  children: [Text("Hello"), Text("Explore Beautiful Places")],
-                )
-              ],
-            )
-          ],
+        child: Padding(
+          padding: EdgeInsets.all(12.0),
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [Text("Hello"), Text("Explore Beautiful Places")],
+                  )
+                ],
+              )
+            ],
+          ),
         ),
       ),
     );
