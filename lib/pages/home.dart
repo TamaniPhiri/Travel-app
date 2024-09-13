@@ -83,7 +83,8 @@ class _HomePageState extends State<HomePage> {
                                     style: TextStyle(
                                         color: category == categories[index]
                                             ? Colors.white
-                                            : Colors.grey),
+                                            : Colors.grey,
+                                        fontWeight: FontWeight.bold),
                                   ),
                                 ),
                               ),
