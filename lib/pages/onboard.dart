@@ -68,8 +68,15 @@ class _OnBoardPageState extends State<OnBoardPage> {
                 if (currentIndex == onBoardData.length - 1)
                   GestureDetector(
                     onTap: () {
-                      Navigator.pushReplacement(context,
-                          MaterialPageRoute(builder: (_) => const HomePage()));
+                      print("Tapped on navigate to home");
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(builder: (_) => const HomePage()),
+                      ).then((_) {
+                        print("Navigation completed");
+                      }).catchError((error) {
+                        print("Navigation error: $error");
+                      });
                     },
                     child: AnimatedContainer(
                       padding: const EdgeInsets.all(15),

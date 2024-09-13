@@ -11,8 +11,10 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [Text("helo")],
+      body: SafeArea(
+        child: Column(
+          children: [Text("helo")],
+        ),
       ),
     );
   }
