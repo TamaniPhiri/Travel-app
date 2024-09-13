@@ -67,7 +67,7 @@ class _HomePageState extends State<HomePage> {
                               child: GestureDetector(
                                 onTap: () {
                                   setState(() {
-                                    category == categories[index];
+                                    category = categories[index];
                                   });
                                 },
                                 child: Container(
