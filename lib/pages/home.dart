@@ -36,6 +36,9 @@ class _HomePageState extends State<HomePage> {
                       "Explore cities",
                       style:
                           TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                    ),
+                    Row(
+                      children: [Text("See all"), Icon(Icons.arrow_forward)],
                     )
                   ],
                 ),
