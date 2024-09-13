@@ -38,7 +38,7 @@ class _HomePageState extends State<HomePage> {
                           TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                     ),
                     Row(
-                      children: [Text("See all"), Icon(Icons.arrow_forward)],
+                      children: [Text("All"), Icon(Icons.arrow_forward)],
                     )
                   ],
                 ),
