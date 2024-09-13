@@ -48,6 +48,8 @@ class _HomePageState extends State<HomePage> {
                   Expanded(
                       child: TextField(
                     decoration: InputDecoration(
+                        focusedBorder: UnderlineInputBorder(
+                            borderSide: BorderSide(color: Colors.blue)),
                         hintText: "Search..",
                         prefixIcon: Icon(Icons.search),
                         contentPadding: EdgeInsets.all(20),
