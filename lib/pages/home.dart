@@ -14,6 +14,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
+    String category = "Popular";
     return Scaffold(
       body: SafeArea(
         child: Padding(
@@ -68,8 +69,11 @@ class _HomePageState extends State<HomePage> {
                                   setState(() {});
                                 },
                                 child: Container(
-                                  decoration:
-                                      BoxDecoration(color: Colors.blue[200]),
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(10),
+                                      color: category == categories[index]
+                                          ? Colors.blue[200]
+                                          : Colors.white),
                                   padding: const EdgeInsets.symmetric(
                                       horizontal: 15, vertical: 10),
                                   child: Text(categories[index]),
