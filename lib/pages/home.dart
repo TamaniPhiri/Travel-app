@@ -26,7 +26,9 @@ class _HomePageState extends State<HomePage> {
                         style: TextStyle(
                             fontSize: 18, fontWeight: FontWeight.w700),
                       ),
-                      Text("Explore Beautiful Places")
+                      Text("Explore Beautiful Places",
+                          style: TextStyle(
+                              fontWeight: FontWeight.w600, color: Colors.grey))
                     ],
                   )
                 ],
