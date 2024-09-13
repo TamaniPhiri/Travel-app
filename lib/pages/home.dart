@@ -42,6 +42,22 @@ class _HomePageState extends State<HomePage> {
               ),
               SizedBox(
                 height: size.height * 0.03,
+              ),
+              Row(
+                children: [
+                  Expanded(
+                      child: TextField(
+                    decoration: InputDecoration(
+                        hintText: "Search..",
+                        prefixIcon: Icon(Icons.search),
+                        contentPadding: EdgeInsets.all(20),
+                        filled: true,
+                        fillColor: Colors.white,
+                        enabledBorder: OutlineInputBorder(
+                            borderSide: BorderSide(color: Colors.white),
+                            borderRadius: BorderRadius.circular(15))),
+                  )),
+                ],
               )
             ],
           ),
