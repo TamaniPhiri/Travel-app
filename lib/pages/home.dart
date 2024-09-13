@@ -28,12 +28,12 @@ class _HomePageState extends State<HomePage> {
               const SizedBox(
                 height: 30,
               ),
-              const Padding(
-                padding: EdgeInsets.symmetric(vertical: 20),
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 20),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
+                    const Text(
                       "Explore cities",
                       style:
                           TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
@@ -42,9 +42,9 @@ class _HomePageState extends State<HomePage> {
                       children: [
                         Text(
                           "All",
-                          style: TextStyle(color: Colors.blueAccent),
+                          style: TextStyle(color: Colors.blue[200]),
                         ),
-                        Icon(
+                        const Icon(
                           Icons.arrow_forward_ios_rounded,
                           size: 14,
                           color: Colors.blueAccent,
@@ -61,15 +61,16 @@ class _HomePageState extends State<HomePage> {
                     ...List.generate(
                         categories.length,
                         (index) => Padding(
-                              padding: EdgeInsets.only(left: 15, right: 10),
+                              padding:
+                                  const EdgeInsets.only(left: 10, right: 10),
                               child: GestureDetector(
                                 onTap: () {
                                   setState(() {});
                                 },
                                 child: Container(
-                                  decoration: BoxDecoration(
-                                      color: Colors.lightBlueAccent),
-                                  padding: EdgeInsets.symmetric(
+                                  decoration:
+                                      BoxDecoration(color: Colors.blue[200]),
+                                  padding: const EdgeInsets.symmetric(
                                       horizontal: 15, vertical: 10),
                                   child: Text(categories[index]),
                                 ),

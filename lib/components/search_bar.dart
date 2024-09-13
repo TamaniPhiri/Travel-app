@@ -12,25 +12,25 @@ class MySearchBar extends StatelessWidget {
         Expanded(
             child: TextField(
           decoration: InputDecoration(
-              focusedBorder: UnderlineInputBorder(
+              focusedBorder: const UnderlineInputBorder(
                   borderSide: BorderSide(color: Colors.blue)),
               hintText: "Search..",
-              prefixIcon: Icon(Icons.search),
-              contentPadding: EdgeInsets.all(20),
+              prefixIcon: const Icon(Icons.search),
+              contentPadding: const EdgeInsets.all(20),
               filled: true,
               fillColor: Colors.white,
               enabledBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.white),
+                  borderSide: const BorderSide(color: Colors.white),
                   borderRadius: BorderRadius.circular(15))),
         )),
         const SizedBox(
           width: 10,
         ),
         Container(
-          padding: EdgeInsets.all(10),
+          padding: const EdgeInsets.all(10),
           decoration: BoxDecoration(
               color: Colors.blue, borderRadius: BorderRadius.circular(15)),
-          child: Icon(
+          child: const Icon(
             Icons.tune,
             size: 30,
             color: Colors.white,
